@@ -25,3 +25,20 @@ function returnSecondValue(getArray){
 
 //passing Array internally
 console.log(returnSecondValue([200, 400, 500, 1000]));
+
+
+//callback function : calling function from another function
+function square(n){
+    return n*n;
+}
+function cube(n){
+    return n*n*n;
+}
+function sumofsomething(a,b,fn){
+    const vara = fn(a)
+    const varb = fn(b)
+    return vara + varb;
+}
+
+const ans = sumofsomething(2,3,cube);
+console.log(ans);
