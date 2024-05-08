@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+
+<body>
+    <button id = "theme">Theme change</button>
+    <script>
+        const theme = document.getElementById("theme");
+        const body = document.querySelector('body');
+
+        theme.addEventListener("click", () => {
+        console.log("pink");
+        body.style.background = linear-gradient(blue,green);
+        })
+    </script>
+</body>
+</html>
