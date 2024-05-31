@@ -1,0 +1,14 @@
+--> write a blog on javascript execution context 
+ 1. Global execution context
+ 2. Function execution context
+ 3. evavl execution context
+
+--> write a blog on immediate invoke function execution
+
+-->write a blog on Nullish Coalescing Operator (??)
+
+-->write a blog on htmlcollection and nodelist
+
+-->write a blog on innerHTML and appendchild
+
+-->write a blog on event propogation ie (node.addeventlisterner(var , callback , [true/false] )) , 1)event bubbling 2) event capturing

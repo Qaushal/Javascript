@@ -47,7 +47,7 @@ function square(n){
 function cube(n){
     return n*n*n;
 }
-function sumofsomething(a,b,fn){
+function sumofsomething(a,b,fn){ //function passed as input
     const vara = fn(a)
     const varb = fn(b)
     return vara + varb;
