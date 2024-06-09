@@ -9,8 +9,7 @@ window.onload = function(){
     fetch(`https://api.unsplash.com/photos/${search_params.get('id')}?client_id=${API_KEY}`).then(convert_to_json)
     .then(function(data){
         localdetail(data);
-        // document.getElementsByName('q')[0].value = search_params.get('q');
-        // document.getElementById('Search_Query').innerText = search_params.get('q');
+       document.getElementById('image_id').innerText = search_params.get('id');
     });
 }
     function localdetail(data){
@@ -19,5 +18,14 @@ window.onload = function(){
         document.getElementById('detail_image').style.borderColor = data.color;
         document.getElementById('description_text').innerText = data.description;
         document.getElementById('username').innerText = data.user.username;
+        document.getElementById('like_count').innerText = data.likes;
+        document.getElementById('view_count').innerText = data.views;
+        document.getElementById('alt_desc').innerText = data.alt_description;
+        document.getElementById('image_color').style.backgroundColor = data.color;
+        document.getElementById('color_text').innerText = data.color;
+        document.getElementById('download_link').href = data.links.download;
 
+        const date = new Date(data.created_at); 
+        const upload_date  = `${date.getUTCDate()}/${date.getUTCMonth()+1}/${date.getUTCFullYear()}`;
+        document.getElementById('upload_date').innerText = upload_date;
     }
