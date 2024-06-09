@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallerie | A Photo Search App</title>
+    <link rel="stylesheet" href="./assets/common.css">
+    <link rel="stylesheet" href="./assets/search.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="./"><img src="./assets/instagram.png" alt="logo" class="logo"/></a>
+        <a href="./"><h1 class="title">GALLERIE</h1></a>
+        <form action="./search.html" method="get">
+         <input type="text" name="q" autocomplete="off" class="search" placeholder="Search Anything"/>
+         <input type="submit" value="Search" class="search"/>
+        </form>
+     </nav>
+    <!-- Main Section -->
+    <section>
+        <h1 class="heading">&lt;SEARCH FOR - <span id="Search_Query"></span>/&gt;</h1>
+        <div class="container" id="Result_container"></div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <a href="./"><h5>Gallerie</h5></a>
+        <h1>|</h1>
+        <h5>Designed and Developed by Kaushal !</h5>
+        <h1>|</h1>
+        <a href="./"><h5>Github</h5></a>
+    </footer>
+    <script src="./assets/common.js"></script>
+    <script src="./assets/search.js"></script>
+</body>
+</html>
